@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+@keyframes floating{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-6px);box-shadow: 0px 6px 4px #727377;}
+    100%{transform: translateY(0px);}
+}
+:root{
+    --smoke : #e6e7f0;
+    --blue : #4522ec;
+    --blue-m : #1d115e;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--smoke);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    gap: 170px;
+}
+h1 {
+    color: #3a3e4a;
+    margin-bottom: 60px;
+}
+
+.relogio {
+    width: 300px;
+    height: 300px;
+    border: 5px solid var(--blue);
+    border-radius: 50%;
+    background-color:  var(--smoke);
+}
+
+.riscos {
+    width: 100%;
+    height: 100%;
+    padding-left: 50%;
+    padding-top: 50%;
+    margin-top: -3px;
+}
+.risco {
+    width: 145px;
+    height: 5px;
+    position: absolute;
+    transform-origin: left;
+    display: flex;
+    justify-content: flex-end;
+}
+.risco .ponto {
+    width: 9px;
+    height: 100%;
+    background-color: var(--blue);
+}
+
+.ponteiros {
+    width: 100%;
+    height: 100%;
+    padding-left: 50%;
+    padding-top: 50%;
+    margin-top: -100%;
+}
+.p {
+    transform-origin: left;
+    transform: rotate(0deg);
+    border-radius: 70%;
+    position: absolute;
+}
+
+.p_s {
+    width: 120px;
+    height: 3px;
+    background-color:#18191a ;
+}
+.p_m {
+    width: 90px;
+    height: 4px;
+    background-color:#3a3e4a;
+}
+.p_h {
+    width: 60px;
+    height: 4px;
+    background-color:#3a3e4a ;
+ 
+}
+.encaixe {
+    width: 15px;
+    height: 15px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: -7px;
+    z-index: 99;
+}
+.digital {
+    color: #f0f0f0;
+    padding: 30px 50px ;
+    background-color: var(--blue);
+    border-radius: 6px;
+    font-size: 40px;
+    animation: floating 4s infinite;
+    
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 30px;
+    margin-top: 20px;
+    color: #3a3e4a;
+    font-size: 13px;
+}
