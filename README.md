@@ -1,2 +1,2 @@
-# Reogio_JS
+# Relogio_JS
 // Relógio simples feito em JS
