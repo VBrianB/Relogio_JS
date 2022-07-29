@@ -3,7 +3,7 @@
 
 O projeto é apenas um relógio digital e analógico para treinar funções de horário e algumas animações.
 
-Você pode ver o projeto funcionando [AQUI]()
+Você pode ver o projeto funcionando [AQUI](https://vbrianb.github.io/Relogio_JS/)
 
 ## ⚙️ Tools
 
